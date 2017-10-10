@@ -125,7 +125,7 @@ int main (int argc, char **argv) {
         fprintf(stderr, "[X] Failed to disassemble instruction at %p: %lx%lx\n", 
             (void *) rip, inst.words[0], inst.words[1]);
       } else {
-        fprintf(stderr, "RIP: %p\t %s\t %s\n", 
+        fprintf(stderr, "[%p]\t %s\t %s\n", 
             (void *) rip,
             d_inst[0].mnemonic,
             d_inst[0].op_str);
